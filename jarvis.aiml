@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- MENYIMPAN NAMA USER -->
+    <category>
+        <pattern>My name is *</pattern>
+        <template>
+            <think>
+                <set name="username">
+                    <star/>
+                </set>
+            </think>
+
+            Hallo <get name="username"/> nice to meet you
+        </template>
+    </category>
+
+
+    <!-- BOT MENGENALI USER -->
+    <category>
+        <pattern>do you know me</pattern>
+        <template>
+            Sure buddy you are <get name="username"/>
+        </template>
+    </category>
+
+
+    <!-- SRAI -->
+    <category>
+        <pattern>who am i jarvis</pattern>
+        <template>
+            <srai>do you know me</srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>do you know me jarvis</pattern>
+        <template>
+            <srai>do you know me</srai>
+        </template>
+    </category>
+
+</aiml>

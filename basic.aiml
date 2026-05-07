@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>siapa penyanyi favoriteku</pattern>
+        <template>
+            <random>
+                <li>Menurutku penyanyi favoritmu adalah Ariel NOAH</li>
+                <li>Mungkin kamu suka Once Mekel</li>
+                <li>Sepertinya penyanyi favoritmu adalah Pamungkas</li>
+                <li>Aku rasa kamu menyukai Hindia</li>
+                <li>Bisa jadi favoritmu adalah Virgoun</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>apa band favoritku</pattern>
+        <template>
+            <random>
+                <li>Menurutku band favoritmu adalah Tame Impala</li>
+                <li>Mungkin kamu suka Tv Girl</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>
