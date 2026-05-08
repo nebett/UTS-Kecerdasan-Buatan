@@ -3,7 +3,7 @@
 
     <!-- MENYIMPAN NAMA USER -->
     <category>
-        <pattern>My name is *</pattern>
+        <pattern>MY NAME IS *</pattern>
         <template>
             <think>
                 <set name="username">
@@ -15,29 +15,26 @@
         </template>
     </category>
 
-
     <!-- BOT MENGENALI USER -->
     <category>
-        <pattern>do you know me</pattern>
+        <pattern>DO YOU KNOW ME</pattern>
         <template>
             Sure buddy you are <get name="username"/>
         </template>
     </category>
 
-
     <!-- SRAI -->
     <category>
-        <pattern>who am i jarvis</pattern>
+        <pattern>WHO AM I JARVIS</pattern>
         <template>
-            <srai>do you know me</srai>
+            <srai>DO YOU KNOW ME</srai>
         </template>
     </category>
 
-
     <category>
-        <pattern>do you know me jarvis</pattern>
+        <pattern>DO YOU KNOW ME JARVIS</pattern>
         <template>
-            <srai>do you know me</srai>
+            <srai>DO YOU KNOW ME</srai>
         </template>
     </category>
 

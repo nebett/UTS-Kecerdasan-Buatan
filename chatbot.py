@@ -17,3 +17,4 @@ while True:
     response = kernel.respond(message)
 
     print("Bot :", response)
+os.system(f'espeak -ven+m3 -s115 -p45 -a180 "{response}"')

@@ -2,7 +2,7 @@
 <aiml version="1.0.1" encoding="UTF-8">
 
     <category>
-        <pattern>siapa penyanyi favoriteku</pattern>
+        <pattern>SIAPA PENYANYI FAVORITEKU</pattern>
         <template>
             <random>
                 <li>Menurutku penyanyi favoritmu adalah Ariel NOAH</li>
@@ -15,7 +15,7 @@
     </category>
 
     <category>
-        <pattern>apa band favoritku</pattern>
+        <pattern>APA BAND FAVORITKU</pattern>
         <template>
             <random>
                 <li>Menurutku band favoritmu adalah Tame Impala</li>
