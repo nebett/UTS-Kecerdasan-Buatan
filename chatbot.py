@@ -4,7 +4,6 @@ import os
 kernel = aiml.Kernel()
 
 kernel.learn("basic.aiml")
-kernel.learn("jarvis.aiml")
 
 print("Jarvis aktif...")
 
