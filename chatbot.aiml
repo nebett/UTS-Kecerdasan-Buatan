@@ -1,0 +1,79 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Salam -->
+    <category>
+        <pattern>HALO</pattern>
+        <template>
+            Halo, selamat datang!
+        </template>
+    </category>
+
+    <!-- Menyimpan nama user -->
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            Hello <set name="username"><star/></set> nice to meet you
+        </template>
+    </category>
+
+    <!-- Mengingat nama -->
+    <category>
+        <pattern>DO YOU KNOW ME</pattern>
+        <template>
+            Sure buddy you are <get name="username"/>
+        </template>
+    </category>
+
+    <!-- Variasi pertanyaan -->
+    <category>
+        <pattern>DO YOU KNOW ME *</pattern>
+        <template>
+            <srai>DO YOU KNOW ME</srai>
+        </template>
+    </category>
+
+    <!-- SRAI -->
+    <category>
+        <pattern>WHO AM I JARVIS</pattern>
+        <template>
+            <srai>DO YOU KNOW ME</srai>
+        </template>
+    </category>
+
+    <!-- Variasi tambahan -->
+    <category>
+        <pattern>WHO AM I JARVIS *</pattern>
+        <template>
+            <srai>DO YOU KNOW ME</srai>
+        </template>
+    </category>
+
+    <!-- Pertanyaan lain -->
+    <category>
+        <pattern>DO YOU KNOW ME JARVIS</pattern>
+        <template>
+            <srai>DO YOU KNOW ME</srai>
+        </template>
+    </category>
+
+    <!-- Variasi tambahan -->
+    <category>
+        <pattern>DO YOU KNOW ME JARVIS *</pattern>
+        <template>
+            <srai>DO YOU KNOW ME</srai>
+        </template>
+    </category>
+
+    <!-- Random penyanyi favorit -->
+    <category>
+        <pattern>SIAPA PENYANYI FAVORITEKU</pattern>
+        <template>
+            <random>
+                <li>Favorite singer kamu adalah Freddie Mercury</li>
+                <li>Favorite singer kamu adalah Chester Bennington</li>
+                <li>Favorite singer kamu adalah Ariel Noah</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>
