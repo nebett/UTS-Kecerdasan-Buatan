@@ -1,18 +1,19 @@
 import aiml
+import os
 
-bot = aiml.Kernel()
+kernel = aiml.Kernel()
 
-bot.learn("chatbot.aiml")
+kernel.learn("chatbot.aiml")
 
-print("Chatbot aktif! Ketik 'quit' untuk keluar.")
+print("Jarvis aktif...")
 
 while True:
-    pesan = input("User : ")
+    message = input("User : ")
 
-    if pesan.lower() == "quit":
-        print("Bot : Goodbye!")
+    if message == "quit":
         break
 
-    jawaban = bot.respond(pesan)
+    response = kernel.respond(message)
 
-    print("Bot :", jawaban)
+    print("Bot :", response)
+os.system(f'espeak -ven+m3 -s115 -p45 -a180 "{response}"')

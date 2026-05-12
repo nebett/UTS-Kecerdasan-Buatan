@@ -68,12 +68,31 @@
     <category>
         <pattern>SIAPA PENYANYI FAVORITEKU</pattern>
         <template>
+            Penyanyi favoritemu adalah
             <random>
-                <li>Favorite singer kamu adalah Freddie Mercury</li>
-                <li>Favorite singer kamu adalah Chester Bennington</li>
-                <li>Favorite singer kamu adalah Ariel Noah</li>
+                <li>Joji</li>
+                <li>Mac DeMarco</li>
+                <li>Alex G</li>
             </random>
         </template>
     </category>
 
+    <!-- Random band favorit -->
+    <category>
+        <pattern>SIAPA PERSONIL BAND FAVORITEKU</pattern>
+        <template>
+            personil band favoritmu adalah
+            <random>
+                <li>Erick Dari RumahSakit</li>
+                <li>Reza Ryan Dari Sore</li>
+                <li>Adrian Yunan Dari Efek Rumah Kaca</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- tidak bisak menjawab pertanyaan -->
+    <category>
+        <pattern>*</pattern>
+        <template>Maaf, aku tidak mengerti pertanyaanmu</template>
+    </category>
 </aiml>
